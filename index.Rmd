@@ -1,29 +1,128 @@
 ---
-title: "Untitled"
-output: revealjs::revealjs_presentation
+title: "Quiz!"
+output: learnr::tutorial
+runtime: shiny_prerendered
 ---
 
-## R Markdown
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+```{r setup, include=FALSE}
+library(learnr, reticulate)
 
-## Slide with Bullets
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Code and Output
-
-```{r}
-summary(cars)
 ```
 
-## Slide with Plot
 
-```{r, echo=FALSE}
-plot(cars)
+##  1 
+
+### What language is this?
+
+
+```{r, eval=FALSE}
+#import <Foundation/Foundation.h>
+
+int main (int argc, const char * argv[])
+{
+        NSLog (@"Hello, World!");
+        return 0;
+}
 ```
 
+
+```{r q-1, echo=FALSE}
+question("",
+  answer("Objective-C", correct = TRUE),
+  answer("Smalltalk"),
+  answer("C"),
+random_answer_order = TRUE
+)
+```
+
+
+
+
+
+## 2 
+
+### What language is this?
+
+
+```{r, eval=FALSE}
+# include <iostream>
+
+int main()
+{
+   std::cout << "Hello, world!\n";
+}
+```
+
+
+```{r q-2, echo=FALSE}
+question("",
+  answer("C"),
+  answer("C++", correct = TRUE),
+  answer("C#"),
+random_answer_order = TRUE
+)
+```
+
+## 3
+
+### What language is this?
+
+```{r, eval=FALSE}
+\documentclass{plain}
+\begin{document}
+Hello, world!
+\end{document}
+```
+
+```{r q-3, echo=FALSE}
+question("",
+  answer("LaTeX", correct = TRUE),
+  answer("ConTeXt"),
+  answer("TeX"),
+random_answer_order = TRUE
+)
+```
+
+## 4
+
+### The SQL used by front-end application programs to request data from the DMBS is called: 
+
+```{r q-4, echo=FALSE}
+question("",
+  answer("VDL"),
+  answer("SDL"),
+  answer("DML", correct = TRUE),
+   answer("DDL"),
+random_answer_order = TRUE
+)
+```
+
+## 5
+
+### A database language used for defining the whole databasestructureand schema is called :
+
+```{r q-5, echo=FALSE}
+question("",
+  answer("VDL"),
+  answer("SDL"),
+  answer("DML"),
+   answer("DDL", correct = TRUE),
+random_answer_order = TRUE
+)
+```
+
+## 6  
+### Which of these packages allows users to run code from the Julia language in R?
+
+```{r q-6, echo=FALSE}
+question("",
+  answer("RJuliaR"),
+  answer("JuliaR"),
+  answer("RJulia"),
+   answer("JuliaCall", correct = TRUE),
+random_answer_order = TRUE
+)
+```
